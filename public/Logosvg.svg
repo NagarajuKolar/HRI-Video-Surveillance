@@ -1,0 +1,11 @@
+
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" fill="#0d0d0d"/>
+  <g font-family="Orbitron, sans-serif" font-weight="bold">
+    <text x="140" y="60" font-size="56" fill="#ff6b00">HRI</text>
+    <text x="140" y="95" font-size="22" fill="#e0e0e0">VIDEO SURVEILLANCE</text>
+  </g>
+  <circle cx="70" cy="60" r="30" fill="none" stroke="#ff6b00" stroke-width="6"/>
+  <circle cx="70" cy="60" r="14" fill="#ff6b00"/>
+  <line x1="40" y1="60" x2="100" y2="60" stroke="#ff6b00" stroke-width="3" />
+</svg>

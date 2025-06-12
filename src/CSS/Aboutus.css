@@ -1,0 +1,136 @@
+.about-section {
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  top: 65px;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  padding: 2rem;
+  max-width: 500px;
+  border: 1px solid white;
+  margin-left: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgb(232 229 229 / 70%);
+    animation: glowingBox 3s ease-in-out infinite;
+}
+
+.about-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-overlay p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.about-overlay:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.6);
+  border-color: rgba(0, 174, 255, 0.8);
+}
+
+@keyframes glowingBox {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 174, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.aboutus-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 70px 11%;
+    margin-top: 40px;
+background-color: rgb(120 112 138 / 36%);
+    gap: 35px;
+}
+.aboutus-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.aboutus-image img {
+  width: 530px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.aboutus-content {
+  flex: 1 1 50%;
+  color: #2a2a2a;
+}
+
+.aboutus-content h2 {
+  font-size: 36px;
+  color: #002b5c;
+  margin-bottom: 15px;
+}
+body.bg-dark .aboutus-content h2
+{
+  color: #55be8d;
+}
+
+.aboutus-content h4 {
+  color: #e63946;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.aboutus-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+body.bg-dark .aboutus-content p{
+  color: rgb(254, 254, 254);
+}
+.aboutus-usecases {
+  padding: 40px 10%;
+  background-color: #f5f9fc;
+  color: #2a2a2a;
+}
+body.bg-dark .aboutus-usecases{
+  background-color: rgba(147, 143, 155, 0.36);;
+
+}
+
+.aboutus-usecases h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #002b5c;
+}
+body.bg-dark .aboutus-usecases h3 {
+    color: #3cdc67;
+}
+
+
+.aboutus-usecases ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+body.bg-dark .ul-class{
+  color: aqua !important;
+}
+
+.aboutus-usecases li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+}
