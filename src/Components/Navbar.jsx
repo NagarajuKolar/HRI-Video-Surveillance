@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaMoon, FaSignInAlt, FaUser, FaUpload, FaHome, FaSun } from 'react-icons/fa';
 import Hrilogo from '/public/LogoHRI.png';
 
-import '../Css/Navbar.css';
+import '../CSS/Navbar.css';
 
 function Navbar() {
     const [isDarkTheme, setIsDarkTheme] = useState(false);

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../Css/Home.css';
+import '../CSS/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
