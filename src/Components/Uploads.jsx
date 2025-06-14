@@ -28,13 +28,40 @@ function Uploads() {
         }));
         setImages((prev) => [...prev, ...imageData]);
     };
-
-
     const handleRemoveImg = (index) => {
         const newImages = [...images];
         URL.revokeObjectURL(newImages[index].url);
         newImages.splice(index, 1);
         setImages(newImages);
+    };
+
+
+    const uploadFilesToBackend = async () => {
+        const formData = new FormData();
+
+        // Add videos
+        videos.forEach((video) => {
+            formData.append('videos', video.file);
+        });
+
+        // Add images
+        images.forEach((image) => {
+            formData.append('images', image.file);
+        });
+
+        try {
+            const response = await fetch('http://localhost:5000/api/upload', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+            console.log('Upload response:', data);
+            alert('Files uploaded successfully!');
+        } catch (err) {
+            console.error('Upload error:', err);
+            alert('Failed to upload files.');
+        }
     };
 
 
@@ -104,6 +131,13 @@ function Uploads() {
                         </div>
                     </div>
                 </div>
+
+                <div className="text-center mt-4 mb-5">
+                    <button className="btn btn-success px-4 py-2 fw-semibold" onClick={uploadFilesToBackend}>
+                        Upload Selected Files
+                    </button>
+                </div>
+
             </div>
         </>
     );

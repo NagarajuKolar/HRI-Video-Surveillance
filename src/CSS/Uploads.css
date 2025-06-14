@@ -9,7 +9,7 @@ body.bg-dark .full-cont{
   padding: 30px;
   border-radius: 12px;
   border: 1px solid #ccc;
-  margin-top: 75px;
+  margin-top: 80px;
   height: 80vh;
     background: linear-gradient(135deg, #977979, #161628d9);
 }
@@ -126,3 +126,112 @@ body.bg-dark .full-cont{
   z-index: 2;
   cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+  .upload-wrapper,
+  .upload-imagewrapper {
+    padding: 20px 15px;
+    height: auto;
+  }
+
+  .upload-box,
+  .upload-imagebox {
+    height: auto;
+    padding: 15px;
+  }
+
+  .upload-icon {
+    font-size: 40px;
+  }
+
+  .uploading-btn {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .upload-btnlogo {
+    font-size: 22px;
+    margin-right: 8px;
+  }
+
+  .video-preview-grid,
+  .image-preview-grid {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .video-wrapper,
+  .image-wrapper,
+  .video-thumb-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .video-thumb {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-overlay {
+    font-size: 12px;
+  }
+
+  .imgpre-close-btn {
+    right: -20px;
+    top: -4px;
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+  }
+
+  .close-btn {
+    width: 16px;
+    height: 16px;
+    font-size: 9px;
+    top: -5px;
+    right: -5px;
+  }
+
+  .text-center button {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .uploading-btn {
+    font-size: 16px;
+  }
+
+  .upload-wrapper,
+  .upload-imagewrapper {
+    padding: 15px 10px;
+  }
+
+  .video-wrapper,
+  .image-wrapper {
+    width: 65px;
+    height: 65px;
+  }
+
+  .video-thumb-wrapper {
+    width: 65px;
+    height: 65px;
+  }
+
+  .video-overlay {
+    font-size: 10px;
+  }
+
+  .upload-box,
+  .upload-imagebox {
+    padding: 10px;
+  }
+
+  .text-center button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+

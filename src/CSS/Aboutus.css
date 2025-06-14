@@ -134,3 +134,87 @@ body.bg-dark .ul-class{
   font-size: 16px;
   line-height: 1.7;
 }
+
+
+@media (max-width: 768px) {
+  .about-section {
+    height: auto;
+    padding: 2rem 1rem;
+    top: 60px;
+  }
+
+  .about-overlay {
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .about-overlay p {
+    font-size: 1rem;
+  }
+
+  .aboutus-container {
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 20px;
+  }
+
+  .aboutus-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutus-content h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .aboutus-content h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .aboutus-content p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .aboutus-usecases {
+    padding: 30px 5%;
+  }
+
+  .aboutus-usecases h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .aboutus-usecases ul {
+    padding-left: 15px;
+  }
+
+  .aboutus-usecases li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-overlay h2 {
+    font-size: 1.6rem;
+  }
+
+  .aboutus-content h2 {
+    font-size: 24px;
+  }
+
+  .aboutus-content p,
+  .aboutus-usecases li {
+    font-size: 14px;
+  }
+}
+
