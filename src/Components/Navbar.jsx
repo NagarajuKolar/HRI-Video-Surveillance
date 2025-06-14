@@ -65,7 +65,7 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    <div className="d-flex align-items-center gap-2">
+                    <div className="auth-controls">
                         <button
                             className="btn btn-sm me-2 btn-outline-dark dark-theme"
                             onClick={toggleTheme}
