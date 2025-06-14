@@ -161,9 +161,9 @@
   }
 
     .model-section spline-viewer {
-        transform: scale(1.65);
+        transform: scale(1.50);
         padding-top: 88px !important;
-        padding-right: 85px;
+        padding-right: 80px;
         margin-top: 85px;
     }
 }
