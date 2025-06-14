@@ -157,14 +157,15 @@
 
   .model-section {
     height: 280px ;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
   }
 
-  .model-section spline-viewer {
-    transform: scale(1.20);
-    padding-top: 90px !important;
-    padding-right: 60px;
-  }
+    .model-section spline-viewer {
+        transform: scale(1.9);
+        padding-top: 88px !important;
+        padding-right: 100px;
+        margin-top: 85px;
+    }
 }
 
 
